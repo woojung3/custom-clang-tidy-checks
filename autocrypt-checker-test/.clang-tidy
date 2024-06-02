@@ -1,0 +1,34 @@
+# Configure clang-tidy for this project.
+
+# Disabled:
+#  -google-readability-namespace-comments the *_CLIENT_NS is a macro, and
+#   clang-tidy fails to match it against the initial value.
+Checks:
+    -*,
+    autocrypt-mobis-cert-cpp-con54,
+    autocrypt-mobis-cert-cpp-ctr54,
+    autocrypt-mobis-cert-cpp-ctr55,
+    autocrypt-mobis-cert-cpp-ctr56,
+    autocrypt-mobis-cert-cpp-dcl50,
+    autocrypt-mobis-cert-cpp-dcl51,
+    autocrypt-mobis-cert-cpp-dcl54,
+    autocrypt-mobis-cert-cpp-dcl57,
+    autocrypt-mobis-cert-cpp-dcl58,
+    autocrypt-mobis-cert-cpp-dcl59,
+    autocrypt-mobis-cert-cpp-err52,
+    autocrypt-mobis-cert-cpp-err58,
+    autocrypt-mobis-cert-cpp-err61,
+    autocrypt-mobis-cert-cpp-err62,
+    autocrypt-mobis-cert-cpp-exp54,
+    autocrypt-mobis-cert-cpp-exp55,
+    autocrypt-mobis-cert-cpp-exp63,
+    autocrypt-mobis-cert-cpp-msc50,
+    autocrypt-mobis-cert-cpp-msc51,
+    autocrypt-mobis-cert-cpp-oop54,
+    autocrypt-mobis-cert-cpp-oop57,
+    autocrypt-mobis-cert-cpp-oop58,
+
+FormatStyle: google
+
+# Turn all the warnings from the checks above into errors.
+# WarningsAsErrors: "*"
